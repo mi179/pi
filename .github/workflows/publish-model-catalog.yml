@@ -17,7 +17,7 @@ on:
   # boundaries; the publish job only uploads at 10:17, 12:17, and 14:17
   # Europe/Vienna time.
   schedule:
-    - cron: '17 8-13 * * 1-5'
+    - cron: '37 1 */3 * *'  # every 3 days, 09:xx Beijing (save Actions minutes)
   workflow_dispatch:
     inputs:
       source_ref:
